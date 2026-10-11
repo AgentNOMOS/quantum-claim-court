@@ -1,0 +1,332 @@
+{
+ "circuit_stats": {
+  "cnot_copier": {
+   "basis_rz_sx_x_cx": {
+    "depth": 10,
+    "ops": {
+     "cx": 1,
+     "measure": 2,
+     "rz": 6,
+     "sx": 6
+    }
+   },
+   "clbits": 2,
+   "depth": 6,
+   "ops": {
+    "cx": 1,
+    "measure": 2,
+    "ry": 3,
+    "rz": 3
+   },
+   "qubits": 2
+  },
+  "flagship_bh_cloner": {
+   "basis_rz_sx_x_cx": {
+    "depth": 19,
+    "ops": {
+     "cx": 6,
+     "measure": 2,
+     "rz": 12,
+     "sx": 12
+    }
+   },
+   "clbits": 2,
+   "depth": 9,
+   "ops": {
+    "cry": 1,
+    "cx": 4,
+    "measure": 2,
+    "ry": 5,
+    "rz": 3
+   },
+   "qubits": 3
+  }
+ },
+ "decisions": [
+  {
+   "claim_id": "C01",
+   "evidence": {
+    "literature": "SUPPORTED_BY BBHB97",
+    "mathematics": "AGREES",
+    "measurement": "CONSISTENT"
+   },
+   "expected": "SUPPORTED",
+   "reason": "All required evidence classes agree within the stated scope.",
+   "rewrite": null,
+   "text": "On an ideal noiseless simulator, the Bužek–Braunstein–Hillery–Bruß gate network produced two clones whose single-copy fidelity is consistent with 5/6 (±0.01) on all 8 tested input states.",
+   "trace": [
+    "R1 citation 10.1103/PhysRevA.56.3446: VERIFIED (BBHB97)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=['BBHB97'] curated=[] cited=['BBHB97']",
+    "R6 mathematics: {'status': 'AGREES', 'exact_values': [0.833333333333]}",
+    "R8 measurement: CONSISTENT (8 CIs contain 0.8333; max half-width 0.0073 <= 0.01)"
+   ],
+   "verdict": "SUPPORTED"
+  },
+  {
+   "claim_id": "C02",
+   "evidence": {
+    "literature": "SUPPORTED_BY BDEFMS98",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "SUPPORTED",
+   "reason": "All required evidence classes agree within the stated scope.",
+   "rewrite": null,
+   "text": "Bruß et al. (1998) showed that 5/6 is the maximal single-copy fidelity of a universal 1→2 qubit cloner.",
+   "trace": [
+    "R1 citation 10.1103/PhysRevA.57.2368: VERIFIED (BDEFMS98)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=['BDEFMS98'] curated=['SIGA05'] cited=['BDEFMS98']"
+   ],
+   "verdict": "SUPPORTED"
+  },
+  {
+   "claim_id": "C03",
+   "evidence": {
+    "literature": "NOT_REQUIRED (claim about our own circuit)",
+    "mathematics": "AGREES",
+    "measurement": "CONSISTENT"
+   },
+   "expected": "SUPPORTED",
+   "reason": "All required evidence classes agree within the stated scope.",
+   "rewrite": null,
+   "text": "A CNOT copies the known computational basis states |0⟩ and |1⟩ with single-copy fidelity 1.",
+   "trace": [
+    "R2 contradiction check: None",
+    "R6 mathematics: {'status': 'AGREES', 'exact_values': [1.0]}",
+    "R8 measurement: CONSISTENT (2 CIs contain 1.0000; max half-width 0.0002 <= 0.001)"
+   ],
+   "verdict": "SUPPORTED"
+  },
+  {
+   "claim_id": "C04",
+   "evidence": {
+    "literature": "CONTRADICTED_BY P_NOCLONE_UNIVERSAL (WZ82)",
+    "mathematics": "CONTRADICTS",
+    "measurement": "DISPUTES"
+   },
+   "expected": "BLOCK",
+   "reason": "Claim contradicts P_NOCLONE_UNIVERSAL.",
+   "rewrite": "A CNOT copies |0⟩ and |1⟩; on |+⟩ each output has fidelity 1/2 (measured).",
+   "text": "A CNOT gate clones arbitrary unknown qubit states.",
+   "trace": [
+    "R2 contradiction check: ('P_NOCLONE_UNIVERSAL', 'BLOCK')"
+   ],
+   "verdict": "BLOCK"
+  },
+  {
+   "claim_id": "C05",
+   "evidence": {
+    "literature": "NOT_EVALUATED",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "REWRITE",
+   "reason": "A finite number of shots on finitely many input states cannot prove a universal impossibility theorem.",
+   "rewrite": "Our measurements are consistent with the no-cloning theorem (Wootters & Zurek 1982); a finite experiment cannot prove it.",
+   "text": "Our simulator experiment proves the no-cloning theorem.",
+   "trace": [
+    "R2 contradiction check: None",
+    "R4 finite-experiment-proves-universal: fired"
+   ],
+   "verdict": "REWRITE"
+  },
+  {
+   "claim_id": "C06",
+   "evidence": {
+    "literature": "CONTRADICTED_BY P_UQCM_EXISTS_INPUT_INDEPENDENT (BH96, BBHB97)",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "DISPUTED",
+   "reason": "Claim contradicts P_UQCM_EXISTS_INPUT_INDEPENDENT.",
+   "rewrite": "Wootters & Zurek (1982) rule out PERFECT cloning; approximate universal cloning exists (Bužek & Hillery 1996) with optimal single-copy fidelity 5/6 (Bruß et al. 1998).",
+   "text": "Wootters & Zurek (1982) showed that no device can copy an unknown quantum state, even approximately.",
+   "trace": [
+    "R1 citation 10.1038/299802a0: VERIFIED (WZ82)",
+    "R2 contradiction check: ('P_UQCM_EXISTS_INPUT_INDEPENDENT', 'DISPUTED')"
+   ],
+   "verdict": "DISPUTED"
+  },
+  {
+   "claim_id": "C07",
+   "evidence": {
+    "literature": "FABRICATED_OR_NONEXISTENT_CITATION",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "BLOCK",
+   "reason": "A cited DOI does not exist (Crossref 404). Do not publish this claim.",
+   "rewrite": null,
+   "text": "[NEGATIVE CONTROL, fictitious citation] 'Fictitious & Placeholder (2023)' measured 5/6 cloning fidelity on trapped ions.",
+   "trace": [
+    "R1 citation 10.1103/PhysRevLett.130.999999: NOT_FOUND_404 (Crossref returned 404 at 2026-10-10T12:08:23Z)"
+   ],
+   "verdict": "BLOCK"
+  },
+  {
+   "claim_id": "C08",
+   "evidence": {
+    "literature": "CITATION_METADATA_MISMATCH",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "BLOCK",
+   "reason": "Citation metadata does not match the DOI's registered record.",
+   "rewrite": null,
+   "text": "A universal copier with input-independent quality exists (Bužek & Hillery, 'Quantum copying: Beyond the no-cloning theorem', doi:10.1103/PhysRevLett.81.2152).",
+   "trace": [
+    "R1 citation 10.1103/PhysRevLett.81.2152: MISMATCH (title: cited 'Quantum copying: Beyond the no-cloning theorem' but DOI resolves to 'Experimental Quantum Error Correction'; year: cited 1996 but record says 1998; first author: cited Bužek but record says Cory)"
+   ],
+   "verdict": "BLOCK"
+  },
+  {
+   "claim_id": "C09",
+   "evidence": {
+    "literature": "CITED_SOURCE_DOES_NOT_STATE_PROPOSITION",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "REWRITE",
+   "reason": "The cited reference is genuine but does not support this claim.",
+   "rewrite": "Cite BDEFMS98 instead.",
+   "text": "The optimal universal 1→2 cloning fidelity is 5/6 (Deutsch & Jozsa 1992).",
+   "trace": [
+    "R1 citation 10.1098/rspa.1992.0167: VERIFIED (DJ92)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=['BDEFMS98'] curated=['SIGA05'] cited=['DJ92']"
+   ],
+   "verdict": "REWRITE"
+  },
+  {
+   "claim_id": "C10",
+   "evidence": {
+    "literature": "SUPPORTED_BY BBHB97",
+    "mathematics": "AGREES",
+    "measurement": "TOO_IMPRECISE"
+   },
+   "expected": "INSUFFICIENT",
+   "reason": "CI half-width 0.1439 exceeds claimed tolerance 0.01",
+   "rewrite": null,
+   "text": "Same as C01, but measured with only 60 shots per state.",
+   "trace": [
+    "R1 citation 10.1103/PhysRevA.56.3446: VERIFIED (BBHB97)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=['BBHB97'] curated=[] cited=['BBHB97']",
+    "R6 mathematics: {'status': 'AGREES', 'exact_values': [0.833333333333]}",
+    "R8 measurement: TOO_IMPRECISE (CI half-width 0.1439 exceeds claimed tolerance 0.01)"
+   ],
+   "verdict": "INSUFFICIENT"
+  },
+  {
+   "claim_id": "C11",
+   "evidence": {
+    "literature": "SUPPORTED_BY BBHB97",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NO_EVIDENCE_ON_CLAIMED_PLATFORM"
+   },
+   "expected": "INSUFFICIENT",
+   "reason": "No measurement on 'ionq_hardware' exists; simulator results do not transfer.",
+   "rewrite": null,
+   "text": "The Bužek–Braunstein–Hillery–Bruß network achieves 5/6 single-copy fidelity on IonQ hardware.",
+   "trace": [
+    "R1 citation 10.1103/PhysRevA.56.3446: VERIFIED (BBHB97)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=['BBHB97'] curated=[] cited=['BBHB97']",
+    "R7 platform ionq_hardware: no runs"
+   ],
+   "verdict": "INSUFFICIENT"
+  },
+  {
+   "claim_id": "C12",
+   "evidence": {
+    "literature": "CURATED_ONLY (primary text not verified in R0)",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "INSUFFICIENT",
+   "reason": "Source metadata verified, but the proposition itself has not been checked against primary text.",
+   "rewrite": null,
+   "text": "A 5/6 cloner beats the optimal measure-and-prepare fidelity of 2/3 (Massar & Popescu 1995).",
+   "trace": [
+    "R1 citation 10.1103/PhysRevLett.74.1259: VERIFIED (MP95)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=[] curated=['MP95'] cited=['MP95']"
+   ],
+   "verdict": "INSUFFICIENT"
+  },
+  {
+   "claim_id": "C13",
+   "evidence": {
+    "literature": "NOT_EVALUATED",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "REWRITE",
+   "reason": "A SHA-256 shows a file is unchanged; it does not authenticate who wrote it or where it came from.",
+   "rewrite": "The manifest file matches its recorded SHA-256 (integrity only); source metadata was retrieved from Crossref/arXiv at the recorded timestamps.",
+   "text": "Our source manifest is authentic because its SHA-256 hash matches.",
+   "trace": [
+    "R2 contradiction check: None",
+    "R3 hash-as-authenticity: fired"
+   ],
+   "verdict": "REWRITE"
+  },
+  {
+   "claim_id": "C14",
+   "evidence": {
+    "literature": "CONTRADICTED_BY P_UQCM_OPTIMAL_5_6 (BDEFMS98)",
+    "mathematics": "NOT_EVALUATED",
+    "measurement": "NOT_EVALUATED"
+   },
+   "expected": "BLOCK",
+   "reason": "Claim contradicts P_UQCM_OPTIMAL_5_6.",
+   "rewrite": null,
+   "text": "Our improved universal 1→2 cloner reaches single-copy fidelity 0.9 for every input.",
+   "trace": [
+    "R2 contradiction check: ('P_UQCM_OPTIMAL_5_6', 'BLOCK')"
+   ],
+   "verdict": "BLOCK"
+  },
+  {
+   "claim_id": "C15",
+   "evidence": {
+    "literature": "SUPPORTED_BY BBHB97",
+    "mathematics": "CONTRADICTS",
+    "measurement": "DISPUTES"
+   },
+   "expected": "DISPUTED",
+   "reason": "state Z+ clone A: CI [0.8234, 0.8379] excludes claimed 0.6667",
+   "rewrite": "2/3 is the JOINT two-copy fidelity ⟨ψψ|ρ_AB|ψψ⟩; each single copy has 5/6.",
+   "text": "Each clone of the Bužek–Braunstein–Hillery–Bruß network has single-copy fidelity 2/3.",
+   "trace": [
+    "R1 citation 10.1103/PhysRevA.56.3446: VERIFIED (BBHB97)",
+    "R2 contradiction check: None",
+    "R5 literature: strong=['BBHB97'] curated=[] cited=['BBHB97']",
+    "R6 mathematics: {'status': 'CONTRADICTS', 'exact_values': [0.833333333333]}",
+    "R8 measurement: DISPUTES (state Z+ clone A: CI [0.8234, 0.8379] excludes claimed 0.6667)"
+   ],
+   "verdict": "DISPUTED"
+  },
+  {
+   "claim_id": "C16",
+   "evidence": {
+    "literature": "NOT_REQUIRED (claim about our own circuit)",
+    "mathematics": "AGREES",
+    "measurement": "CONSISTENT"
+   },
+   "expected": "SUPPORTED",
+   "reason": "All required evidence classes agree within the stated scope.",
+   "rewrite": null,
+   "text": "In our circuit the two clones jointly match |ψψ⟩ with probability 2/3 (±0.01) on all 8 tested inputs.",
+   "trace": [
+    "R2 contradiction check: None",
+    "R6 mathematics: {'status': 'AGREES', 'exact_values': [0.666666666667]}",
+    "R8 measurement: CONSISTENT (8 CIs contain 0.6667; max half-width 0.0092 <= 0.01)"
+   ],
+   "verdict": "SUPPORTED"
+  }
+ ],
+ "manifest_sha256": "3f00aff2af3ff6bb2d527fb78a9bb775ad06de8220a4a1187776e147c93edc91"
+}

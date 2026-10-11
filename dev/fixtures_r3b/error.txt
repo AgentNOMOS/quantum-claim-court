@@ -1,0 +1,1 @@
+{"schema": "uqcc-r2-envelope/1", "status": "error", "message": "RuntimeError: simulated provider failure", "job_attempted": true, "live": false}

@@ -1,0 +1,184 @@
+<div id="uqcc" class="court">
+  <div class="masthead" role="banner">
+    <p class="kicker">Qollab × IonQ Quantum Hackathon 2026 · AgentNOMOS Quantum Lab</p>
+    <h1>Quantum Claim Court</h1>
+    <p class="lede">A scientific claim about copying quantum states is brought before the court. Three independent
+      witnesses testify: the <strong>original literature</strong>, <strong>mathematics</strong>, and
+      <strong>this Run's quantum measurement</strong>. None of them may speak for the others.</p>
+    <div id="run-status" class="status status-pending" role="status" aria-live="polite">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span id="run-status-text">Awaiting this Run's quantum measurement…</span>
+    </div>
+    <nav class="scene-nav" aria-label="Scenes">
+      <a href="#scene-a">A · Docket</a><a href="#scene-b">B · Sources</a><a href="#scene-c">C · Experiment</a>
+      <a href="#scene-d">D · Witnesses</a><a href="#scene-e">E · Verdict</a><a href="#scene-f">F · Limits &amp; evidence</a>
+    </nav>
+  </div>
+
+  <div id="failure" class="failure" hidden role="alert"></div>
+
+  <main>
+    <section id="scene-a" class="scene" aria-labelledby="h-a">
+      <h2 id="h-a"><span class="scene-letter">A</span>The claim docket</h2>
+      <p class="scene-intro">Eighteen claims await judgment: fourteen from the frozen R1 docket and four measurement
+        claims about this circuit (R2 addendum). A <span class="tag tag-meas">needs measurement</span> claim is
+        decided with this Run's counts. All others are decided by literature and mathematics alone. Select a claim to
+        open its case file.</p>
+      <div id="docket-filters" class="filters" role="group" aria-label="Filter by verdict"></div>
+      <ol id="docket" class="docket" aria-live="polite">
+        <li class="placeholder">The court sits once this Run's evidence has arrived.</li>
+      </ol>
+    </section>
+
+    <section id="scene-b" class="scene" aria-labelledby="h-b">
+      <h2 id="h-b"><span class="scene-letter">B</span>Original scientific sources</h2>
+      <p class="scene-intro">The three primary publications behind the case. Each source shows exactly what was verified:
+        bibliographic metadata (Crossref), abstract text (arXiv), and whether anyone reviewed the full text. For all
+        three, no one did.</p>
+      <div id="sources" class="sources"><p class="placeholder">Waiting for the frozen manifest…</p></div>
+      <h3>Citation test bench</h3>
+      <p>Five ways a citation can succeed or fail, as judged in this Run:</p>
+      <div id="citation-bench" class="bench"><p class="placeholder">Waiting for decisions…</p></div>
+      <p class="note">The source manifest is a <strong>frozen snapshot</strong> retrieved on 2026-10-10 (Crossref
+        12:04–12:08 UTC, arXiv 12:06 UTC). It is not a live academic search, and this app makes no network calls.</p>
+    </section>
+
+    <section id="scene-c" class="scene" aria-labelledby="h-c">
+      <h2 id="h-c"><span class="scene-letter">C</span>The quantum cloning experiment</h2>
+      <p class="scene-intro">The Bužek–Braunstein–Hillery–Bruß universal 1→2 cloner (Phys. Rev. A 56, 3446, 1997)
+        runs as <strong>one bare 3-qubit circuit, once</strong>, on the backend Qollab injected into this Run. There is
+        no retry and no fallback simulator.</p>
+      <div id="backend-card" class="card"><p class="placeholder">No measurement yet.</p></div>
+      <figure class="circuit-fig">
+        <div id="circuit" class="scroll-x" tabindex="0" aria-label="Circuit diagram (scrolls horizontally on small screens)"></div>
+        <p class="swipe-hint" aria-hidden="true">Swipe sideways to see the whole circuit →</p>
+        <figcaption>Input |ψ⟩ = Rz(0.7)·Ry(1.1)|0⟩ on q0. The machine state (2|00⟩+|01⟩+|11⟩)/√6 is prepared on
+          (q1, q2), then four CNOTs copy. Each clone has the input rotation <em>undone</em> before measurement, so
+          “reads 0” means “matches |ψ⟩”.</figcaption>
+      </figure>
+      <ul class="roles">
+        <li><span class="qb">q0</span> input |ψ⟩ → <strong>clone A</strong> (measured into clone[0])</li>
+        <li><span class="qb">q1</span> blank → <strong>clone B</strong> (measured into clone[1])</li>
+        <li><span class="qb">q2</span> <strong>machine qubit</strong>: absorbs the unavoidable disturbance; never measured</li>
+      </ul>
+      <div class="grid2">
+        <div id="counts" class="card"><h3>Raw counts</h3><p class="placeholder">No counts yet.</p></div>
+        <div id="fid-chart" class="card"><h3>Measured fidelity vs exact prediction</h3><p class="placeholder">No measurement yet.</p></div>
+      </div>
+    </section>
+
+    <section id="scene-d" class="scene" aria-labelledby="h-d">
+      <h2 id="h-d"><span class="scene-letter">D</span>Three independent witnesses</h2>
+      <div class="witness-cols">
+        <div class="wcol w-lit"><h3>1 · Literature</h3><p>What published research actually establishes, at the level we
+          checked: metadata, abstract or title. Never the full text.</p></div>
+        <div class="wcol w-math"><h3>2 · Mathematics</h3><p>Established theorems (no-cloning, the 5/6 optimum), and the
+          exact state-vector values of this circuit: 5/6, 5/6, 2/3.</p></div>
+        <div class="wcol w-meas"><h3>3 · Quantum measurement</h3><p>What this finite 2000-shot run observed, with 99%
+          family-wise intervals. It is evidence about this run, not a proof of any theorem.</p></div>
+      </div>
+      <div id="witness-table" class="witness-table"><p class="placeholder">Waiting for decisions…</p></div>
+    </section>
+
+    <section id="scene-e" class="scene" aria-labelledby="h-e">
+      <h2 id="h-e"><span class="scene-letter">E</span>The court's verdict</h2>
+      <label class="field">Case file
+        <select id="claim-select" disabled><option>Waiting for this Run…</option></select>
+      </label>
+      <article id="claim-detail" class="case" aria-live="polite"><p class="placeholder">No case selected.</p></article>
+
+      <div class="challenge card">
+        <h3>Challenge the court <span class="badge-local">LOCAL EVALUATION</span></h3>
+        <p>Build your own claim from a statement, a citation and a framing. Every combination was judged by the same
+          frozen rules during this Run, against this Run's single measurement. Changing the selection runs
+          <strong>no new quantum job</strong>.</p>
+        <div class="challenge-grid">
+          <label class="field">Statement <select id="ch-statement" disabled></select></label>
+          <label class="field">Citation <select id="ch-citation" disabled></select></label>
+          <label class="field">Framing <select id="ch-framing" disabled></select></label>
+        </div>
+        <div id="challenge-out" class="challenge-out" aria-live="polite"></div>
+      </div>
+
+      <h3>Why the court rules this way</h3>
+      <div class="why">
+        <details><summary>Perfect universal cloning is impossible</summary>
+          <p>Suppose one unitary U copied every state: U|ψ⟩|0⟩ = |ψ⟩|ψ⟩ and U|φ⟩|0⟩ = |φ⟩|φ⟩. Unitaries preserve
+            inner products, so ⟨ψ|φ⟩ = ⟨ψ|φ⟩². The overlap must therefore be 0 or 1: only orthogonal or identical
+            states can share a perfect copier. This is the content of the no-cloning theorem (Wootters &amp; Zurek,
+            Nature 1982). It is a mathematical result, and this experiment did not produce it.</p></details>
+        <details><summary>A CNOT does not clone arbitrary states</summary>
+          <p>CNOT(α|0⟩+β|1⟩)|0⟩ = α|00⟩+β|11⟩. That is an entangled state, not (α|0⟩+β|1⟩)⊗(α|0⟩+β|1⟩). Each
+            output on its own is diag(|α|², |β|²), so for |+⟩ each “copy” has fidelity only 1/2. A CNOT copies
+            |0⟩ and |1⟩ perfectly because they are known and orthogonal. That is classical bit copying, not
+            cloning an unknown quantum state. (Exact calculation; the CNOT is not run in this app.)</p></details>
+        <details><summary>The 5/6 bound has precise assumptions</summary>
+          <p>5/6 is the maximal single-copy fidelity for cloning that is <strong>deterministic</strong> (always
+            succeeds), <strong>symmetric</strong> (both copies equally good), <strong>universal</strong> (same quality
+            for every pure qubit input), <strong>1→2</strong>, on <strong>qubits</strong> (Bruß et al., Phys. Rev. A
+            1998, abstract-level check). Asymmetric, probabilistic, state-dependent or N→M cloning are governed by
+            other results. The 5/6 must not be carried over to them.</p></details>
+        <details><summary>A finite experiment does not prove the no-cloning theorem</summary>
+          <p>The theorem speaks about all states and all unitaries. This Run tests one input state, 2000 shots, on an
+            ideal simulator that itself computes quantum mechanics. A run can be <em>consistent with</em> a prediction,
+            or disagree with it statistically. It cannot establish a universal impossibility.</p></details>
+        <details><summary>A correct DOI does not prove an unrelated claim</summary>
+          <p>A verified DOI shows that a publication exists with that title, authors and year. It does not show that
+            the paper says what is claimed. Deutsch &amp; Jozsa (1992) is genuine but concerns quantum algorithms.
+            The checked abstract of Bužek &amp; Hillery (1996) does not state the 5/6 optimum. For that, the court
+            requires Bruß et al. (1998).</p></details>
+      </div>
+    </section>
+
+    <section id="scene-f" class="scene" aria-labelledby="h-f">
+      <h2 id="h-f"><span class="scene-letter">F</span>Limitations &amp; reproducibility</h2>
+      <ul class="limits">
+        <li><strong>Ideal simulator, not quantum hardware.</strong> Nothing here says anything about hardware.</li>
+        <li><strong>One input state</strong> in the live experiment (Rz(0.7)·Ry(1.1)|0⟩). Universality comes from the
+          exact calculation, not from the measurement.</li>
+        <li><strong>Scope of the 5/6 optimum:</strong> deterministic, symmetric, universal 1→2 qubit cloning only.</li>
+        <li><strong>Finite-shot uncertainty:</strong> 2000 shots give intervals about ±0.03 wide. They cannot tell 5/6
+          from nearby values such as 0.81 or 0.85.</li>
+        <li><strong>False DISPUTED outcomes happen:</strong> with 99% family-wise intervals, about 1.4% of runs of this
+          correct circuit still exclude an exact value by chance (measured locally over 2000 seeds).</li>
+        <li><strong>No full-text verification:</strong> literature support is title- or abstract-level only.</li>
+        <li><strong>Frozen, manually structured claim register:</strong> the claims and their mapping to
+          propositions were written by people, not extracted automatically.</li>
+        <li><strong>Not a general-purpose fact checker:</strong> the court rules only on this docket and its
+          building blocks.</li>
+        <li><strong>SHA-256 shows content consistency, not source identity.</strong> A matching hash means the text is
+          unchanged. It does not tell you who produced it.</li>
+        <li><strong>Theorem ≠ simulation ≠ observation:</strong> the theorem is proved in the literature; the exact
+          values are computed from the circuit; the counts are observed in this Run.</li>
+      </ul>
+
+      <h3>Browser cross-check <span class="badge-local">CONSISTENCY ONLY</span></h3>
+      <p class="note">Your browser re-decodes the raw counts and recomputes the SHA-256 values. This shows the
+        displayed evidence is internally consistent. It does <strong>not</strong> authenticate where the evidence came
+        from. The independent authority is the standard-library verifier below.</p>
+      <ul id="crosscheck" class="crosscheck"><li class="placeholder">Waiting for evidence…</li></ul>
+
+      <h3>Evidence export (exact text)</h3>
+      <p>This is the exact text produced by Python in this Run. The browser displays it and never re-serialises it.
+        Copy all of it into <code>evidence.txt</code>, then run, from the unzipped project:</p>
+      <pre class="cmd">python3 -I verifier/verify_uqcc_r2.py evidence.txt .</pre>
+      <div class="export-actions">
+        <button type="button" id="btn-copy" disabled>Copy evidence</button>
+        <button type="button" id="btn-select" disabled>Select all</button>
+        <span id="copy-msg" class="copy-msg" role="status" aria-live="polite"></span>
+      </div>
+      <label class="sr-only" for="export">Evidence export</label>
+      <textarea id="export" class="export" readonly spellcheck="false" rows="8">No evidence yet: nothing has been measured in this Run.</textarea>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>References:</strong> W. K. Wootters &amp; W. H. Zurek, Nature 299, 802 (1982), doi:10.1038/299802a0 ·
+      V. Bužek &amp; M. Hillery, Phys. Rev. A 54, 1844 (1996), doi:10.1103/PhysRevA.54.1844 · V. Bužek,
+      S. L. Braunstein, M. Hillery &amp; D. Bruß, Phys. Rev. A 56, 3446 (1997), doi:10.1103/PhysRevA.56.3446 ·
+      D. Bruß et al., Phys. Rev. A 57, 2368 (1998), doi:10.1103/PhysRevA.57.2368.</p>
+    <p>Clean-room hackathon project by AgentNOMOS Quantum Lab. Built with AI assistance (Claude, Anthropic) under the
+      team's direction. Not the UVO / ActionGate 2.0 system. MIT licensed.</p>
+    <p><strong>This effort is supported by Qollab &amp; IonQ.</strong></p>
+  </footer>
+</div>

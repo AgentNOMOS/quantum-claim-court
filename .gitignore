@@ -1,0 +1,9 @@
+.venv*/
+__pycache__/
+.pytest_cache/
+dist/
+dev/_stage_*/
+node_modules/
+local_run_out/
+out/
+pkg/

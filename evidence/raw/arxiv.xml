@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ZANTs8ELkCOI7AJ1tR4wkFlldLs</id>
+  <title>arXiv Query: search_query=&amp;id_list=quant-ph/9607018,quant-ph/9705038,quant-ph/9705046,quant-ph/9703046&amp;start=0&amp;max_results=10</title>
+  <updated>2026-10-10T12:06:20Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=quant-ph/9607018,quant-ph/9705038,quant-ph/9705046,quant-ph/9703046" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/9607018v1</id>
+    <title>Quantum Copying: Beyond the No-Cloning Theorem</title>
+    <updated>1996-07-20T14:15:01Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/9607018v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/9607018v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We analyze to what extent it is possible to copy arbitrary states of a two-level quantum system. We show that there exists a "universal quantum copying machine", which approximately copies quantum mechanical states in such a way that the quality of its output does not depend on the input. We also examine a machine which combines a unitary transformation with a selective measurement to produce good copies of states in a neighborhood of a particular state. We discuss the problem of measurement of the output states.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1996-07-20T14:15:01Z</published>
+    <arxiv:comment>RevTex, 26 pages, to appear in Physical Review A</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Vladimir Buzek</name>
+    </author>
+    <author>
+      <name>Mark Hillery</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.54.1844</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.54.1844" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/9703046v1</id>
+    <title>Quantum copying: A network</title>
+    <updated>1997-03-24T12:11:03Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/9703046v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/9703046v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We present a network consisting of quantum gates which produces two imperfect copies of an arbitrary qubit. The quality of the copies does not depend on the input qubit. We also show that for a restricted class of inputs it is possible to use a very similar network to produce three copies instead of two. For qubits in this class, the copy quality is again independent of the input and is the same as the quality of the copies produced by the two-copy network.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1997-03-24T12:11:03Z</published>
+    <arxiv:comment>10 pages LaTeX, with 1 figure, submitted to the Physical Review A</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>V. Buzek</name>
+    </author>
+    <author>
+      <name>S. L. Braunstein</name>
+    </author>
+    <author>
+      <name>M. Hillery</name>
+    </author>
+    <author>
+      <name>D. Bruss</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.56.3446</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.56.3446" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/9705038v3</id>
+    <title>Optimal Universal and State-Dependent Quantum Cloning</title>
+    <updated>1997-12-06T18:51:26Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/9705038v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/9705038v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We establish the best possible approximation to a perfect quantum cloning machine which produces two clones out of a single input. We analyze both universal and state-dependent cloners. The maximal fidelity of cloning is shown to be 5/6 for universal cloners. It can be achieved either by a special unitary evolution or by a novel teleportation scheme. We construct the optimal state-dependent cloners operating on any prescribed two non-orthogonal states, discuss their fidelities and the use of auxiliary physical resources in the process of cloning. The optimal universal cloners permit us to derive a new upper bound on the quantum capacity of the depolarizing quantum channel.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1997-05-22T14:20:40Z</published>
+    <arxiv:comment>30 pages (RevTeX), 2 figures (epsf), further results and further authors added, to appear in Physical Review A</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>PRA 57 (1998) 2368</arxiv:journal_ref>
+    <author>
+      <name>D. Bruss</name>
+    </author>
+    <author>
+      <name>D. P. DiVincenzo</name>
+    </author>
+    <author>
+      <name>A. Ekert</name>
+    </author>
+    <author>
+      <name>C. A. Fuchs</name>
+    </author>
+    <author>
+      <name>C. Macchiavello</name>
+    </author>
+    <author>
+      <name>J. A. Smolin</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevA.57.2368</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevA.57.2368" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/quant-ph/9705046v2</id>
+    <title>Optimal Quantum Cloning Machines</title>
+    <updated>1997-07-17T12:03:41Z</updated>
+    <link href="https://arxiv.org/abs/quant-ph/9705046v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/quant-ph/9705046v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We present Quantum Cloning Machines (QCM) that transform N identical qubits into $M&gt;N$ identical copies and we prove that the fidelity (quality) of these copies is optimal. The connection between cloning and measurement is discussed in detail. When the number of clones M tends towards infinity, the fidelity of each clone tends towards the optimal fidelity that can be obtained by a measurement on the input qubits. More generally, the QCM are universal devices to translate quantum information into classical information.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>1997-05-27T07:39:51Z</published>
+    <arxiv:comment>4 pages, Latex, 1 postscript figure, (very) minor modifications</arxiv:comment>
+    <arxiv:primary_category term="quant-ph"/>
+    <arxiv:journal_ref>Phys.Rev.Lett.79:2153-2156,1997</arxiv:journal_ref>
+    <author>
+      <name>N. Gisin</name>
+    </author>
+    <author>
+      <name>S. Massar</name>
+    </author>
+    <arxiv:doi>10.1103/PhysRevLett.79.2153</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1103/PhysRevLett.79.2153" title="doi"/>
+  </entry>
+</feed>

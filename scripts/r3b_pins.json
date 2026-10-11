@@ -1,0 +1,6 @@
+{
+ "comment": "SHA-256 of the UQCC-R3b IonQ-compatible release candidate ZIP (not owner-accepted).",
+ "zips": {
+  "uqcc_r3b_ionq_compatible_rc.zip": "deba60dbeb54ae6eb7dee90aa732b19fc4a5467fc2c14fbf5a0e0f9f8a5b3b40"
+ }
+}

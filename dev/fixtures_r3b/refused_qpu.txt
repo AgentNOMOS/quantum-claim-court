@@ -1,0 +1,1 @@
+{"schema": "uqcc-r2-envelope/1", "status": "refused", "message": "IonQ quantum hardware (QPU) is never used by this app: it consumes credits (name='ionq_qpu.forte-1', class=qiskit_ionq.ionq_backend.IonQQPUBackend). Zero jobs submitted.", "job_attempted": false, "live": false}

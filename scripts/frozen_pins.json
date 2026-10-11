@@ -1,0 +1,16 @@
+{
+ "comment": "SHA-256 of the frozen R1 files at tag uqcc-r1 (commit 7e7e340); also verified by the owner's real Qollab runs.",
+ "files": {
+  "uqcc_r1/__init__.py": "3e07e4a185808e7c9cb09b6f6f3e81f9527912fb035e45cbdd2d14853767fcdf",
+  "uqcc_r1/app.py": "ed409edb2c2da1bed5b5be96effe8563e496995c2c4c00dce3b85aae8a902d12",
+  "uqcc_r1/circuit.py": "9f72e4039bd663965818a8128dce6d1c2a6c70e52da5d91e955c408b243fe67d",
+  "uqcc_r1/claims.py": "b45320202481338355046f0fb371e892f225838c07c89157484f1066a5cb4f4a",
+  "uqcc_r1/interpret.py": "9f38f1a4367ec16736c675ea914e4d4c72e590edd0f75281598840ba8b87e03c",
+  "uqcc_r1/sources_manifest.py": "5ebc47266fceacb15064f78338069c52d5e57598d9db8076921272f826298086",
+  "verifier/verify_uqcc_r1.py": "722a4f6e582c6ddfd3b8aebfb33f108f2ec0f44d6b5f287a75e115752febe9b2"
+ },
+ "zips": {
+  "uqcc_r1_qollab_smoke.zip": "b20b03f766c0f837ec3941b5cb50dddd3bc7e9f121f1b0642090aa6e50e7f502",
+  "uqcc_r2_claim_court_app.zip": "8edd6166eb05d8b7acd00f9bab4a78d5a390bd5084415c9dd2996a129cf16ea0"
+ }
+}

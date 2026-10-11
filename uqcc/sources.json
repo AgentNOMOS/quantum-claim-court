@@ -1,0 +1,363 @@
+{
+ "crossref_not_found": [
+  {
+   "checked_utc": "2026-10-10T12:04:45Z",
+   "crossref_http": 404,
+   "doi": "10.1103/physrevlett.79.2156"
+  },
+  {
+   "checked_utc": "2026-10-10T12:08:23Z",
+   "crossref_http": 404,
+   "doi": "10.1103/physrevlett.130.999999"
+  }
+ ],
+ "frozen_utc": "2026-10-10T12:08:23Z",
+ "manifest": "UQCC-SOURCES",
+ "notice": "FROZEN research-time snapshot. Not a live academic search. A SHA-256 of this file proves only that the file is unchanged, not where its contents came from.",
+ "sources": [
+  {
+   "authors": [
+    "Wootters",
+    "Zurek"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:44Z",
+   "doi": "10.1038/299802a0",
+   "id": "WZ82",
+   "pages": "802-803",
+   "propositions": [
+    {
+     "basis": "TITLE_TEXT",
+     "proposition": "P_NOCLONE_UNIVERSAL",
+     "quote": "A single quantum cannot be cloned"
+    }
+   ],
+   "raw_file": "evidence/raw/10.1038_299802a0.json",
+   "raw_sha256": "e927af5135305f2a3e25e90992aa43b6b1568e4c94083dbdeb958123b5b7ca06",
+   "title": "A single quantum cannot be cloned",
+   "venue": "Nature",
+   "verification_level": "crossref_metadata_only",
+   "volume": "299",
+   "year": 1982
+  },
+  {
+   "authors": [
+    "Dieks"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:05:12Z",
+   "doi": "10.1016/0375-9601(82)90084-6",
+   "id": "DIEKS82",
+   "pages": "271-272",
+   "propositions": [
+    {
+     "basis": "CURATED",
+     "proposition": "P_NOCLONE_UNIVERSAL",
+     "quote": null
+    }
+   ],
+   "raw_file": "evidence/raw/10.1016_0375-9601(82)90084-6.json",
+   "raw_sha256": "4c35663d581af7c9e8b1565701413f4dc4b1895e0af04bf751dcae8a6250feec",
+   "title": "Communication by EPR devices",
+   "venue": "Physics Letters A",
+   "verification_level": "crossref_metadata_only",
+   "volume": "92",
+   "year": 1982
+  },
+  {
+   "arxiv_id": "quant-ph/9607018v1",
+   "arxiv_retrieved_utc": "2026-10-10T12:06:18Z",
+   "authors": [
+    "Bužek",
+    "Hillery"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:44Z",
+   "doi": "10.1103/physreva.54.1844",
+   "id": "BH96",
+   "pages": "1844-1852",
+   "propositions": [
+    {
+     "basis": "ABSTRACT_TEXT",
+     "proposition": "P_UQCM_EXISTS_INPUT_INDEPENDENT",
+     "quote": "there exists a \"universal quantum copying machine\", which approximately copies quantum mechanical states in such a way that the quality of its output does not depend on the input"
+    }
+   ],
+   "raw_file": "evidence/raw/10.1103_PhysRevA.54.1844.json",
+   "raw_sha256": "a9265e699c21527080759400b5b9e2d3d21a789717d2f215e03a308c3e590539",
+   "title": "Quantum copying: Beyond the no-cloning theorem",
+   "venue": "Physical Review A",
+   "verification_level": "crossref_metadata+arxiv_abstract",
+   "volume": "54",
+   "year": 1996
+  },
+  {
+   "arxiv_id": "quant-ph/9703046v1",
+   "arxiv_retrieved_utc": "2026-10-10T12:06:18Z",
+   "authors": [
+    "Bužek",
+    "Braunstein",
+    "Hillery",
+    "Bruß"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:05:12Z",
+   "doi": "10.1103/physreva.56.3446",
+   "id": "BBHB97",
+   "pages": "3446-3452",
+   "propositions": [
+    {
+     "basis": "ABSTRACT_TEXT",
+     "proposition": "P_UQCM_GATE_NETWORK",
+     "quote": "a network consisting of quantum gates which produces two imperfect copies of an arbitrary qubit. The quality of the copies does not depend on the input qubit"
+    },
+    {
+     "basis": "ABSTRACT_TEXT",
+     "proposition": "P_UQCM_EXISTS_INPUT_INDEPENDENT",
+     "quote": "The quality of the copies does not depend on the input qubit"
+    }
+   ],
+   "raw_file": "evidence/raw/10.1103_PhysRevA.56.3446.json",
+   "raw_sha256": "7364dace76bf0f65ac04f1155c1c29f8857aacbc25851dd184c09041b77015d7",
+   "title": "Quantum copying: A network",
+   "venue": "Physical Review A",
+   "verification_level": "crossref_metadata+arxiv_abstract",
+   "volume": "56",
+   "year": 1997
+  },
+  {
+   "arxiv_id": "quant-ph/9705046v2",
+   "arxiv_retrieved_utc": "2026-10-10T12:06:18Z",
+   "authors": [
+    "Gisin",
+    "Massar"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:05:11Z",
+   "doi": "10.1103/physrevlett.79.2153",
+   "id": "GM97",
+   "pages": "2153-2156",
+   "propositions": [
+    {
+     "basis": "ABSTRACT_TEXT",
+     "proposition": "P_QCM_N_TO_M_OPTIMAL",
+     "quote": "we prove that the fidelity (quality) of these copies is optimal"
+    }
+   ],
+   "raw_file": "evidence/raw/10.1103_PhysRevLett.79.2153.json",
+   "raw_sha256": "8c0b9c99cf5b8fd848b918445972c880a7f4a67f640c35691cf20166f9a6d3f3",
+   "title": "Optimal Quantum Cloning Machines",
+   "venue": "Physical Review Letters",
+   "verification_level": "crossref_metadata+arxiv_abstract",
+   "volume": "79",
+   "year": 1997
+  },
+  {
+   "arxiv_id": "quant-ph/9705038v3",
+   "arxiv_retrieved_utc": "2026-10-10T12:06:18Z",
+   "authors": [
+    "Bruß",
+    "DiVincenzo",
+    "Ekert",
+    "Fuchs",
+    "Macchiavello",
+    "Smolin"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:44Z",
+   "doi": "10.1103/physreva.57.2368",
+   "id": "BDEFMS98",
+   "pages": "2368-2378",
+   "propositions": [
+    {
+     "basis": "ABSTRACT_TEXT",
+     "proposition": "P_UQCM_OPTIMAL_5_6",
+     "quote": "The maximal fidelity of cloning is shown to be 5/6 for universal cloners"
+    }
+   ],
+   "raw_file": "evidence/raw/10.1103_PhysRevA.57.2368.json",
+   "raw_sha256": "3a449f664b549a3201efa66ffbc5be4df13e8a868a7b036d3a8ac7d8f950b213",
+   "title": "Optimal universal and state-dependent quantum cloning",
+   "venue": "Physical Review A",
+   "verification_level": "crossref_metadata+arxiv_abstract",
+   "volume": "57",
+   "year": 1998
+  },
+  {
+   "authors": [
+    "Scarani",
+    "Iblisdir",
+    "Gisin",
+    "Acín"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:05:12Z",
+   "doi": "10.1103/revmodphys.77.1225",
+   "id": "SIGA05",
+   "pages": "1225-1256",
+   "propositions": [
+    {
+     "basis": "CURATED",
+     "proposition": "P_UQCM_OPTIMAL_5_6",
+     "quote": null
+    }
+   ],
+   "raw_file": "evidence/raw/10.1103_RevModPhys.77.1225.json",
+   "raw_sha256": "6fa95374fedbc4af2a34d1350b06204f83c1bdf7abb26adc089161d6f1e0e179",
+   "title": "Quantum cloning",
+   "venue": "Reviews of Modern Physics",
+   "verification_level": "crossref_metadata_only",
+   "volume": "77",
+   "year": 2005
+  },
+  {
+   "authors": [
+    "Massar",
+    "Popescu"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:08:22Z",
+   "doi": "10.1103/physrevlett.74.1259",
+   "id": "MP95",
+   "pages": "1259-1263",
+   "propositions": [
+    {
+     "basis": "CURATED",
+     "proposition": "P_MEASURE_PREPARE_2_3",
+     "quote": null
+    }
+   ],
+   "raw_file": "evidence/raw/10.1103_PhysRevLett.74.1259.json",
+   "raw_sha256": "3062293d30069cbd821c19b5950b2cf194edb8f7e14b6d1d35cea56a8ca64b7d",
+   "title": "Optimal Extraction of Information from Finite Quantum Ensembles",
+   "venue": "Physical Review Letters",
+   "verification_level": "crossref_metadata_only",
+   "volume": "74",
+   "year": 1995
+  },
+  {
+   "authors": [
+    "Deutsch",
+    "Jozsa"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:46Z",
+   "doi": "10.1098/rspa.1992.0167",
+   "id": "DJ92",
+   "pages": "553-558",
+   "propositions": [],
+   "raw_file": "evidence/raw/10.1098_rspa.1992.0167.json",
+   "raw_sha256": "27eb48ae323939cfe783f49a54449aecb0845d06cc418b5b794d13ed3ed07140",
+   "title": "Rapid solution of problems by quantum computation",
+   "venue": "Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences",
+   "verification_level": "crossref_metadata_only",
+   "volume": "439",
+   "year": 1992
+  },
+  {
+   "authors": [
+    "Ekert"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:46Z",
+   "doi": "10.1103/physrevlett.67.661",
+   "id": "EKERT91",
+   "pages": "661-663",
+   "propositions": [],
+   "raw_file": "evidence/raw/10.1103_PhysRevLett.67.661.json",
+   "raw_sha256": "67771542db7d5a564b8ca5ee675a7a35a0cf9dce345584a501c9b28a45748173",
+   "title": "Quantum cryptography based on Bell’s theorem",
+   "venue": "Physical Review Letters",
+   "verification_level": "crossref_metadata_only",
+   "volume": "67",
+   "year": 1991
+  },
+  {
+   "authors": [
+    "Bennett",
+    "Brassard"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:45Z",
+   "doi": "10.1016/j.tcs.2014.05.025",
+   "id": "BB84_TCS2014",
+   "pages": "7-11",
+   "propositions": [],
+   "raw_file": "evidence/raw/10.1016_j.tcs.2014.05.025.json",
+   "raw_sha256": "73a099c2b8c57d245c93f5704eec195bf8cd881b56227c6cf750f340f96cd3bd",
+   "title": "Quantum cryptography: Public key distribution and coin tossing",
+   "venue": "Theoretical Computer Science",
+   "verification_level": "crossref_metadata_only",
+   "volume": "560",
+   "year": 2014
+  },
+  {
+   "authors": [
+    "Scarani",
+    "Bechmann-Pasquinucci",
+    "Cerf",
+    "Dušek",
+    "Lütkenhaus",
+    "Peev"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:56Z",
+   "doi": "10.1103/revmodphys.81.1301",
+   "id": "SBCDLP09",
+   "pages": "1301-1350",
+   "propositions": [],
+   "raw_file": "evidence/raw/10.1103_RevModPhys.81.1301.json",
+   "raw_sha256": "f574c5c8592d28ace1aa9c6fc7cf9f107aac6757fb994962e78a0764b559a6e0",
+   "title": "The security of practical quantum key distribution",
+   "venue": "Reviews of Modern Physics",
+   "verification_level": "crossref_metadata_only",
+   "volume": "81",
+   "year": 2009
+  },
+  {
+   "authors": [
+    "Cory",
+    "Price",
+    "Maas",
+    "Knill",
+    "Laflamme",
+    "Zurek",
+    "Havel",
+    "Somaroo"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:04:45Z",
+   "doi": "10.1103/physrevlett.81.2152",
+   "id": "CORY98",
+   "pages": "2152-2155",
+   "propositions": [],
+   "raw_file": "evidence/raw/10.1103_PhysRevLett.81.2152.json",
+   "raw_sha256": "d5c07beb2a4ded0514c2935b19059b03a182db0e5784ca088d94c01e1bb7e369",
+   "title": "Experimental Quantum Error Correction",
+   "venue": "Physical Review Letters",
+   "verification_level": "crossref_metadata_only",
+   "volume": "81",
+   "year": 1998
+  },
+  {
+   "authors": [
+    "Abrams",
+    "Lloyd"
+   ],
+   "crossref_http": 200,
+   "crossref_retrieved_utc": "2026-10-10T12:05:13Z",
+   "doi": "10.1103/physrevlett.81.3992",
+   "id": "AL98",
+   "pages": "3992-3995",
+   "propositions": [],
+   "raw_file": "evidence/raw/10.1103_PhysRevLett.81.3992.json",
+   "raw_sha256": "49d4f60c444bfbf089a8958cbe823f96d0d17b0501844f54635b675f0df02661",
+   "title": "Nonlinear Quantum Mechanics Implies Polynomial-Time Solution for<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mi mathvariant=\"italic\">NP</mml:mi></mml:math>-Complete and #<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mi mathvariant=\"italic\">P</mml:mi></mml:math>Problems",
+   "venue": "Physical Review Letters",
+   "verification_level": "crossref_metadata_only",
+   "volume": "81",
+   "year": 1998
+  }
+ ],
+ "version": "r0.1"
+}

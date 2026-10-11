@@ -1,0 +1,2 @@
+"""Display-only author lists from raw Crossref records (generated; do not edit)."""
+AUTHORS_TEXT = r'''{"BBHB97":["V. Bu\u017eek","S. L. Braunstein","M. Hillery","D. Bru\u00df"],"BDEFMS98":["Dagmar Bru\u00df","David P. DiVincenzo","Artur Ekert","Christopher A. Fuchs","Chiara Macchiavello","John A. Smolin"],"BH96":["V. Bu\u017eek","M. Hillery"],"CORY98":["D. G. Cory","M. D. Price","W. Maas","E. Knill","R. Laflamme","W. H. Zurek","T. F. Havel","S. S. Somaroo"],"DJ92":["David Deutsch","Richard Jozsa"],"GM97":["N. Gisin","S. Massar"],"WZ82":["W. K. Wootters","W. H. Zurek"]}'''

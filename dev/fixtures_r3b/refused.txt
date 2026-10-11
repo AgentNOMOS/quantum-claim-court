@@ -1,0 +1,1 @@
+{"schema": "uqcc-r2-envelope/1", "status": "refused", "message": "Backend not positively identified as BasicSimulator or the free IonQ remote simulator (name='ionq_simulator', class=__main__.Named). Zero jobs submitted.", "job_attempted": false, "live": false}

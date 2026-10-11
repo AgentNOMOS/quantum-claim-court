@@ -1,0 +1,1 @@
+{"schema": "uqcc-r2-envelope/1", "status": "refused", "message": "backend 'ionq_simulator' / __main__.Named is not BasicSimulator; R1 runs on the simulator only (no IonQ, no hardware). Zero jobs submitted.", "job_attempted": false, "live": false}
